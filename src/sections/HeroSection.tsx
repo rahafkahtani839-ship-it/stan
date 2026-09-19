@@ -1,12 +1,9 @@
 "use client";
 
-import { useCallback, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, ArrowLeft, ListChecks, ShieldCheck, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
-import type { Engine } from "tsparticles-engine";
 
 interface HeroSectionProps {
   onPrimaryClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
@@ -46,75 +43,28 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
 
   const CurrentIcon = features[currentIndex].icon;
 
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
-
   return (
     <section
       aria-label={t("hero.ariaLabel")}
-      /* الخلفية الأساسية مع تدرج شفاف ومدمج ناعم */
       className="relative overflow-hidden bg-[var(--color-slate-dark)] text-[var(--color-slate-ice)] pt-30 md:pt-45 pb-16 md:pb-24"
     >
-      {/* ===== التدرج الخلفي الشفاف الشامل (Gradient Overlays) ===== */}
+      {/* ===== التدرج الخلفي الشفاف الشامل ===== */}
       <div
         className="absolute inset-0 z-0 bg-gradient-to-br from-[var(--color-slate-dark)]/90 via-[#3a1f1f]/85 to-[var(--color-slate-dark)]/95"
         aria-hidden="true"
       />
 
-      {/* بقعة إضاءة زجاجية دائرية ناعمة في منتصف الخلفية (Ambient Glow) */}
+      {/* بقع إضاءة زجاجية دائرية ناعمة (بديل أنيق للجسيمات) */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[var(--color-slate-light)]/15 rounded-full blur-[120px] pointer-events-none z-0"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[var(--color-slate-light)]/15 rounded-full blur-[120px] pointer-events-none z-0 animate-pulse duration-1000"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-[var(--color-slate-light)]/10 rounded-full blur-[90px] pointer-events-none z-0"
         aria-hidden="true"
       />
 
-      {/* ===== خلفية Particles ===== */}
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        className="absolute inset-0 z-1 pointer-events-none"
-        options={{
-          fullScreen: false,
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onHover: { enable: true, mode: "grab" },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 140,
-                links: { opacity: 0.6 },
-              },
-            },
-          },
-          particles: {
-            number: { value: 45, density: { enable: true, area: 800 } },
-            color: { value: ["#ececec", "#84934a"] },
-            links: {
-              enable: true,
-              distance: 150,
-              color: "#84934a",
-              opacity: 0.3,
-              width: 1.2,
-            },
-            move: {
-              enable: true,
-              speed: 0.6,
-              direction: "none",
-              random: false,
-              straight: false,
-              outModes: { default: "out" },
-            },
-            size: { value: { min: 1, max: 3.5 } },
-            opacity: { value: 0.5, random: true },
-          },
-          detectRetina: true,
-          background: { color: "transparent" },
-        }}
-      />
-
-      {/* ===== تدرج شفاف للدمج العالي والسفلي مع أقسام الموقع الأخرى ===== */}
+      {/* ===== تدرج شفاف للدمج العلوي والسفلي ===== */}
       <div className="absolute inset-0 pointer-events-none z-2" aria-hidden="true">
         <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[var(--color-slate-dark)] via-[var(--color-slate-dark)]/60 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[var(--color-slate-dark)] via-[var(--color-slate-dark)]/60 to-transparent" />
@@ -124,7 +74,6 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
         <div className="flex flex-col items-center text-center">
 
           {/* العنوان الرئيسي */}
-          {/* العنوان الرئيسي - تم ضبط العرض ومنع الانكسار للغة الإنجليزية */}
           <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -164,8 +113,9 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
               <Send className="h-4 w-4" />
               <span>{t("hero.submitBtn")}</span>
               <ArrowLeft
-                className={`h-4 w-4 transition-transform duration-200 ${isRtl ? "group-hover:-translate-x-1" : "rotate-180 group-hover:translate-x-1"
-                  }`}
+                className={`h-4 w-4 transition-transform duration-200 ${
+                  isRtl ? "group-hover:-translate-x-1" : "rotate-180 group-hover:translate-x-1"
+                }`}
               />
             </a>
 
@@ -217,10 +167,11 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
                     key={idx}
                     onClick={() => setCurrentIndex(idx)}
                     aria-label={`Go to slide ${idx + 1}`}
-                    className={`w-1.5 rounded-full transition-all duration-300 ${idx === currentIndex
+                    className={`w-1.5 rounded-full transition-all duration-300 ${
+                      idx === currentIndex
                         ? "h-4 bg-[var(--color-slate-light)]"
                         : "h-1.5 bg-white/20 hover:bg-white/50"
-                      }`}
+                    }`}
                   />
                 ))}
               </div>
