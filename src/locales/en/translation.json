@@ -1,0 +1,415 @@
+{
+  "logoAlt": "Consumer Complaints Platform Logo",
+  "siteTitle": "Consumer Complaints Platform",
+  "navAria": "Main Navigation",
+  "submitComplaint": "Submit Complaint",
+  "submitComplaintNow": "Submit Complaint Now",
+  "closeMenu": "Close Menu",
+  "openMenu": "Open Menu",
+  "changeLanguage": "Language / اللغة",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "contact": "Contact Us"
+  },
+
+  "footer": {
+    "description": "An independent platform helping consumers in the UAE document and track their complaints against private companies. This platform is not affiliated with or representing any government entity.",
+    "quickLinks": "Quick Links",
+    "quickNavAria": "Quick Navigation",
+    "legal": "Legal",
+    "legalNavAria": "Legal Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "All rights reserved.",
+    "disclaimer": "Consumer Complaints Platform — Not a government entity and does not represent any official authority in the UAE.",
+    "officialPortal": "Consumer Protection Platform",
+    "encrypted": "Encrypted with high-security protocols"
+  },
+
+  "complaintForm": {
+    "legend": "Complainant Details",
+    "labels": {
+      "fullName": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "status": "Residency Status",
+      "emirate": "Emirate",
+      "category": "Complaint Category",
+      "details": "Complaint Details"
+    },
+    "placeholders": {
+      "selectStatus": "Select Status",
+      "selectEmirate": "Select Emirate",
+      "selectCategory": "Select Category",
+      "phone": "+9715XXXXXXXX",
+      "details": "Explain your complaint clearly, including relevant dates and details."
+    },
+    "options": {
+      "statuses": {
+        "citizen": "Citizen",
+        "resident": "Resident"
+      },
+      "emirates": {
+        "abudhabi": "Abu Dhabi",
+        "dubai": "Dubai",
+        "sharjah": "Sharjah",
+        "ajman": "Ajman",
+        "ummalquwain": "Umm Al Quwain",
+        "rasalkhaimah": "Ras Al Khaimah",
+        "fujairah": "Fujairah"
+      },
+      "categories": {
+        "commercial": "Commercial Complaint",
+        "company": "Company Complaint",
+        "commercialCompanies": "Commercial Companies Complaints",
+        "realEstate": "Real Estate Complaints",
+        "consumer": "Consumer Protection Complaints",
+        "fraud": "Scam & Fraud Complaints",
+        "financialFraud": "Financial Fraud Complaints",
+        "commercialFraud": "Trade Fraud Complaints",
+        "onlineStores": "Online Store Complaints"
+      }
+    },
+    "consent": {
+      "text1": "I agree to the ",
+      "privacy": "Privacy Policy",
+      "text2": " and ",
+      "terms": "Terms & Conditions",
+      "text3": ", and confirm that the provided information is accurate."
+    },
+    "buttons": {
+      "submitting": "Submitting complaint…",
+      "submit": "Submit Complaint"
+    },
+    "errors": {
+      "nameMin": "Please enter your full name (at least 3 characters)",
+      "nameMax": "Maximum 100 characters",
+      "nameRegex": "Only letters, spaces, hyphens (-), and apostrophes (') are allowed",
+      "phoneInvalid": "Invalid UAE phone number. Use format +9715XXXXXXXX or 05XXXXXXXX",
+      "emailInvalid": "Invalid email address",
+      "emailMax": "Maximum 255 characters",
+      "statusRequired": "Please select your status",
+      "emirateRequired": "Please select an emirate",
+      "categoryRequired": "Please select a complaint category",
+      "detailsMin": "Please describe your complaint in at least 30 characters",
+      "detailsMax": "Maximum 2000 characters",
+      "consentRequired": "You must agree to the Privacy Policy",
+      "rateLimited": "You have exceeded the maximum limit of messages, please try again after 24 hours",
+      "genericSubmit": "Unable to submit complaint right now. Please try again."
+    }
+  },
+  "categories": {
+    "heading": "Commercial Complaint Sectors",
+    "subheading": "We cover various private commercial sectors to ensure your voice is heard and your rights are protected.",
+    "items": {
+      "telecom": {
+        "title": "Telecom & Internet",
+        "desc": "Mobile contracts, coverage issues, and unauthorized added service fees."
+      },
+      "shopping": {
+        "title": "E-Commerce & Retail",
+        "desc": "Online stores, delivery delays, and misleading return policies."
+      },
+      "realEstate": {
+        "title": "Real Estate & Brokerage",
+        "desc": "Property management disputes, admin fees, and brokerage contracts."
+      },
+      "travel": {
+        "title": "Travel & Tourism",
+        "desc": "Flight cancellations, delays, hotel booking issues, and travel agencies."
+      },
+      "banking": {
+        "title": "Banking & Financials",
+        "desc": "Unfair fees, unauthorized transactions, and banking services."
+      },
+      "maintenance": {
+        "title": "Home Maintenance & Services",
+        "desc": "Maintenance contracts, home appliances, and non-compliant technical services."
+      },
+      "delivery": {
+        "title": "Delivery & Transport Apps",
+        "desc": "Smart delivery apps, food orders, and private transport services."
+      },
+      "other": {
+        "title": "Other Private Sector Services",
+        "desc": "General complaints against private companies and commercial centers."
+      }
+    }
+  },
+ "complaintFormSection": {
+    "ariaLabel": "Commercial Complaint Submission Section",
+    "badge": "Unified Form",
+    "heading": "Submit Your Commercial Complaint Now",
+    "subheading": "Please fill out the form accurately. Your complaint will be documented and processed in accordance with consumer complaint regulations.",
+    "formAriaLabel": "Complaint Documentation Form",
+    "trust1": "Full Data Protection",
+    "trust2": "Fast Follow-up Within 24 Hours",
+    "trust3": "100% Encrypted & Secure"
+  },
+  "ctaSection": {
+    "heading": "Don't compromise your rights.. Document your complaint officially today",
+    "subheading": "Simple and fast steps to submit all details and documents to protect your commercial rights.",
+    "button": "Start Complaint Now"
+  },
+  "badge": "FAQ",
+  "title": "Frequently Asked Questions",
+  "description": "Here are answers to the most common questions regarding submitting and documenting consumer commercial complaints.",
+  "view_all": "View all questions",
+  "items": [
+    {
+      "id": "q1",
+      "question": "How does the consumer complaints platform work for submitting complaints?",
+      "answer": "The platform allows you to submit your complaint details and supporting documents easily. Our team reviews them, documents them with a reference number, and contacts the company concerned to follow up on reaching a positive solution."
+    },
+    {
+      "id": "q2",
+      "question": "Is the complaint submission service free for consumers in the UAE?",
+      "answer": "Yes, documenting, submitting, and following up on complaints is completely free for all consumers and clients within the United Arab Emirates."
+    },
+    {
+      "id": "q3",
+      "question": "What role does the platform play in resolving the issue with the company?",
+      "answer": "We legally document the complaint, issue a reference number, and address the business management to reach a fair settlement that protects consumer rights in accordance with established regulations."
+    }
+  ],
+"hero": {
+  "ariaLabel": "Home - Submit Complaint",
+  "badge": "Certified Consumer Rights Protection Platform",
+  "brandName": "Consumer Complaints Platform",
+  "mainHeading": "To Ensure and Protect Your Commercial Rights",
+  "subheading": "Submit your commercial complaint or inquiry easily. We follow up on your request with the concerned entities to ensure a fast and transparent resolution.",
+  "submitBtn": "Submit Complaint Now",
+  "howItWorksBtn": "How It Works",
+  "features": {
+    "free": {
+      "title": "100% Free Service",
+      "desc": "No hidden fees or extra costs."
+    },
+    "tracking": {
+      "title": "Accurate Tracking & Updates",
+      "desc": "Instant notifications regarding your complaint status."
+    },
+    "security": {
+      "title": "Data Privacy & Security",
+      "desc": "Completely secure handling of your complaint information."
+    }
+  }
+},
+"howItWorks": {
+  "badge": "Simple Process",
+  "heading": "Complaint Documentation & Tracking Process",
+  "subheading": "A transparent mechanism that ensures your right is followed up with an official reference number.",
+  "steps": [
+    { "n": "01", "title": "Fill Complaint Form", "desc": "Enter basic details, issue description, and company info in minutes." },
+    { "n": "02", "title": "Initial Review", "desc": "Our team verifies data completeness and supporting documents." },
+    { "n": "03", "title": "Reference Number & Notification", "desc": "Officially register the complaint and notify the company involved." },
+    { "n": "04", "title": "Settlement & Resolution", "desc": "Receive instant updates regarding the company's response and solutions." }
+  ]
+},
+"whyUs": {
+  "heading": "Why Is Our Platform The Best Choice For Documenting Your Complaint?",
+  "subheading": "We provide a seamless and integrated platform that combines speed and total transparency in handling commercial issues across all UAE emirates.",
+  "submitBtn": "Submit New Complaint",
+  "items": [
+    { "title": "Trusted & Certified Platform", "desc": "Strict professional and legal standards to ensure reliability and protection for all parties." },
+    { "title": "Fast & Efficient Processing", "desc": "Complaint review and initial procedures start within 24 business hours." },
+    { "title": "Comprehensive Legal Documentation", "desc": "Issuing a unified reference file for the complaint that can be used for official follow-ups." },
+    { "title": "Dedicated Consumer Support", "desc": "A team that understands local regulations and supports the consumer step-by-step." }
+  ]
+},
+"about": {
+  "eyebrow": "About Us",
+  "title": "An Independent Consumer Support Platform in the UAE",
+  "description": "We assist consumers in documenting their complaints against private companies professionally and seamlessly.",
+  "values": [
+    { "title": "Our Mission", "desc": "Empower consumers to voice their concerns and document complaints in an organized, transparent way." },
+    { "title": "Our Vision", "desc": "To be the leading reference for UAE consumers documenting complaints against the private sector." },
+    { "title": "Our Values", "desc": "Independence, transparency, respecting user privacy, and complete neutrality." }
+  ],
+  "storyTitle": "Our Story",
+  "storyP1": "The platform began as a private initiative led by a team believing consumers deserve a clear channel to document experiences with private companies. Noticing many complaints get lost in email chains and call center queues, we built a dedicated platform to keep every complaint documented from submission to response.",
+  "storyP2": "We are a fully independent private entity and do not represent any government agency. We operate transparently with absolute commitment to user privacy and data protection.",
+  "howTitle": "How Complaints Are Processed",
+  "storySteps": [
+    "The complaint is received and a reference number is emailed to you.",
+    "Our team reviews the complaint details to ensure all necessary info is included.",
+    "The concern is routed to the respective private company via official customer support channels.",
+    "We send you live status updates as soon as any response or progress occurs."
+  ],
+  "provideTitle": "What We Provide",
+  "provide": [
+    "Receiving and documenting complaints with a reference number.",
+    "Directing complaints to the relevant private company.",
+    "Following up on responses and sending updates to users.",
+    "Providing a safe space for consumer experience documentation."
+  ],
+  "dontProvideTitle": "What We Do Not Provide",
+  "dontProvide": [
+    "We do NOT represent any UAE government or judicial entity.",
+    "We do NOT offer legal advice or legal representation.",
+    "We do NOT guarantee complaint resolution or compensation.",
+    "We do NOT handle criminal or urgent complaints; please contact official authorities."
+  ]
+},
+"contact": {
+  "eyebrow": "Contact Us",
+  "title": "We Are Here To Help You",
+  "description": "Whether you need assistance submitting a complaint or have a general query, we are happy to assist via email.",
+  "emailTitle": "Email Address",
+  "workingHoursTitle": "Business Hours",
+  "workingDays": "Sunday to Thursday",
+  "workingTime": "9:00 AM – 6:00 PM (GST)",
+  "responseTimeTitle": "Expected Response Time",
+  "responseTimeDesc": "Within 24 business hours of receiving your message.",
+  "faqTitle": "Frequently Asked Questions",
+  "faqText": "Have a general question? Visit our",
+  "faqLink": "FAQ page"
+},
+"faq": {
+  "eyebrow": "FAQ",
+  "title": "Answers to Your Most Common Questions",
+  "description": "We have collected the most frequent questions we receive about our platform and services.",
+  "items": [
+    {
+      "q": "Is this platform affiliated with a government entity in the UAE?",
+      "a": "No. The platform is completely private and independent, and does not represent any government or official entity in the UAE."
+    },
+    {
+      "q": "What types of complaints does the platform accept?",
+      "a": "We handle complaints related to private companies across sectors like telecom, e-commerce, real estate, aviation, private financial services, and more."
+    },
+    {
+      "q": "Is the complaint submission service free?",
+      "a": "Yes, submitting a complaint through the platform is 100% free for consumers."
+    },
+    {
+      "q": "How long does it take to process a complaint?",
+      "a": "We usually review complaints within 24 business hours, while final response times depend on the company involved."
+    },
+    {
+      "q": "Do you guarantee a solution or resolution?",
+      "a": "We do not offer any guarantees of resolution or financial compensation. Our role is professional documentation and follow-up."
+    },
+    {
+      "q": "How does the platform protect my data?",
+      "a": "We adhere to best data protection practices and never share your information except as necessary for processing the complaint. Read our Privacy Policy for more."
+    },
+    {
+      "q": "Can I modify or delete my submitted complaint?",
+      "a": "Yes, you can contact us via email to request modification or removal of your data in accordance with our Privacy Policy."
+    },
+    {
+      "q": "Do you handle complaints against government entities?",
+      "a": "No, the platform is strictly for complaints against private sector companies. For government-related complaints, please reach out to official channels."
+    }
+  ]
+},
+"howItWorksPage": {
+  "eyebrow": "How It Works",
+  "title": "From Submission to Response... Step by Step",
+  "description": "We designed the process to be simple and transparent, keeping you updated at every stage.",
+  "ctaTitle": "Ready to get started?",
+  "ctaDesc": "Submit your complaint now and we will handle the rest. Submitting a complaint is completely free.",
+  "ctaBtn": "Submit Complaint",
+  "steps": [
+    {
+      "title": "1. Fill Complaint Form",
+      "desc": "Enter your contact info, company name, and clear complaint details. It takes only a few minutes."
+    },
+    {
+      "title": "2. Review Process",
+      "desc": "Our team reviews the submission to ensure accuracy and compliance with terms of service."
+    },
+    {
+      "title": "3. Directing the Complaint",
+      "desc": "We route your complaint directly to the private company via their official customer service channels."
+    },
+    {
+      "title": "4. Tracking & Notifications",
+      "desc": "You will receive live updates on your email. Keep your reference number for future tracking."
+    }
+  ]
+},
+"notice": {
+  "label": "Notice:",
+  "content": "This is a private, fully independent platform and is not affiliated with or representing any government entity in the UAE. We assist you in documenting your complaint and directing it to the relevant company."
+},
+"thankYou": {
+  "badge": "Request Submitted Successfully",
+  "heading": "Your Complaint Has Been Received",
+  "subheadingP1": "Thank you for trusting ",
+  "platformName": "Consumer Complaints Platform",
+  "subheadingP2": ". Your complaint details have been received and forwarded to the relevant department for review.",
+  "statusLabel": "Current Complaint Status",
+  "statusValue": "Under Review & Verification",
+  "step1Title": "Complaint Received",
+  "step1Desc": "Data saved successfully",
+  "step2Title": "Initial Review",
+  "step2Desc": "Verifying details now",
+  "step3Title": "Outcome Notification",
+  "step3Desc": "Updates via email",
+  "emailAlertTitle": "Check Your Email",
+  "emailAlertDesc": "A confirmation and your reference number have been sent to your email address.",
+  "processingTime": "Processing within 24h",
+  "backHome": "Back to Home",
+  "securityNote": "Your information is encrypted and protected with the highest standards of security"
+},
+"privacy": {
+  "eyebrow": "Legal",
+  "title": "Privacy Policy",
+  "description": "We are committed to protecting your privacy. This document explains what data we collect and how we use it.",
+  "lastUpdated": "Last updated: July 14, 2026",
+  "sec1Title": "1. Information We Collect",
+  "sec1Item1": "Identity details: Name, email address, phone number, emirate.",
+  "sec1Item2": "Complaint content: Company name and details provided in the form.",
+  "sec1Item3": "Technical data: IP address, browser type, time of visit (for security purposes).",
+  "sec2Title": "2. Purpose of Data Collection",
+  "sec2Desc": "We use your data to document your complaint, forward it to the relevant company, communicate with you regarding its status, and improve platform services.",
+  "sec3Title": "3. Storage & Retention",
+  "sec3Desc": "Data is stored on secure servers and retained for as long as necessary to process the complaint and for a reasonable additional period for legal or operational purposes, up to a maximum of 24 months.",
+  "sec4Title": "4. Cookies",
+  "sec4Desc": "We use essential cookies required to run the site, and we may use analytical cookies to understand site usage and improve your experience.",
+  "sec5Title": "5. Data Sharing",
+  "sec5Desc": "We do not sell your data. We share complaint details only with the involved company and technical service providers subject to confidentiality obligations.",
+  "sec6Title": "6. Security",
+  "sec6Desc": "We implement technical and organizational measures to safeguard your data, including encryption in transit and periodic access reviews.",
+  "sec7Title": "7. Your Rights",
+  "sec7Item1": "Right to access your data.",
+  "sec7Item2": "Right to correct or update it.",
+  "sec7Item3": "Right to request deletion subject to applicable policies.",
+  "sec7Item4": "Right to withdraw consent for processing.",
+  "sec7ContactPrefix": "To exercise any of these rights, contact us at",
+  "sec8Title": "8. Policy Updates",
+  "sec8Desc": "We may update this policy from time to time. Any updates will be posted on this page along with the latest revision date."
+},
+"terms": {
+  "eyebrow": "Legal",
+  "title": "Terms and Conditions",
+  "description": "By using the platform, you agree to the terms outlined below. Please read them carefully.",
+  "lastUpdated": "Last updated: July 14, 2026",
+  "sec1Title": "1. Nature of the Platform",
+  "sec1Desc": "Consumer Complaints Platform is an entirely private and independent entity, not affiliated with or representing any UAE government body. It functions as an intermediary to document consumer complaints regarding private companies.",
+  "sec2Title": "2. Platform Responsibilities",
+  "sec2Item1": "Documenting the complaint and issuing a reference number.",
+  "sec2Item2": "Attempting to route the complaint to the concerned company through official channels.",
+  "sec2Item3": "Maintaining user data confidentiality in accordance with the Privacy Policy.",
+  "sec3Title": "3. User Responsibilities",
+  "sec3Item1": "Providing accurate and complete information.",
+  "sec3Item2": "Refraining from using the platform for unlawful or abusive purposes.",
+  "sec3Item3": "Respecting third-party rights and refraining from defamation or slander.",
+  "sec3Item4": "Refraining from sending duplicate or automated submissions.",
+  "sec4Title": "4. Limitation of Liability",
+  "sec4Desc": "The platform does not guarantee complaint resolution or financial compensation. We are not liable for decisions made by the involved companies, nor for any direct or indirect damages resulting from use.",
+  "sec5Title": "5. Prohibited Content",
+  "sec5Desc": "The platform reserves the right to reject or remove any complaint containing offensive, discriminatory, threatening, or unlawful content without stating reasons.",
+  "sec6Title": "6. Independence",
+  "sec6Desc": "We reiterate that the platform is an independent private entity and does not represent any government, judicial, or official body in the UAE.",
+  "sec7Title": "7. Amendments",
+  "sec7Desc": "We may update these terms at any time. Continued use of the platform constitutes acceptance of the amended terms.",
+  "sec8Title": "8. Governing Law",
+  "sec8Desc": "These terms are governed by the laws of the United Arab Emirates."
+}
+}
