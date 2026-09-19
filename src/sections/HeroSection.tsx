@@ -54,13 +54,38 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
         aria-hidden="true"
       />
 
-      {/* بقع إضاءة زجاجية دائرية ناعمة (بديل أنيق للجسيمات) */}
+      {/* ===== الزخارف الثابتة بنفس لون المكتبة (#84934a) ===== */}
+      
+      {/* 1. شبكة النقاط الثابتة (Dot Grid Pattern) */}
+      <div 
+        className="absolute inset-0 z-1 pointer-events-none opacity-20"
+        aria-hidden="true"
+        style={{
+          backgroundImage: `radial-gradient(#84934a 1.2px, transparent 1.2px)`,
+          backgroundSize: '32px 32px'
+        }}
+      />
+
+      {/* 2. شبكة الخيوط المتقاطعة الناعمة (Line Grid Pattern) */}
+      <div 
+        className="absolute inset-0 z-1 pointer-events-none opacity-15"
+        aria-hidden="true"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(132, 147, 74, 0.25) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(132, 147, 74, 0.25) 1px, transparent 1px)
+          `,
+          backgroundSize: '80px 80px'
+        }}
+      />
+
+      {/* 3. دوائر إشعاعية زجاجية ثابتة بنفس لون الأخضر الزيتوني والرمادي */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[var(--color-slate-light)]/15 rounded-full blur-[120px] pointer-events-none z-0 animate-pulse duration-1000"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#84934a]/15 rounded-full blur-[140px] pointer-events-none z-1"
         aria-hidden="true"
       />
       <div
-        className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-[var(--color-slate-light)]/10 rounded-full blur-[90px] pointer-events-none z-0"
+        className="absolute top-1/4 -right-20 w-[350px] h-[350px] bg-[#84934a]/10 rounded-full blur-[100px] pointer-events-none z-1"
         aria-hidden="true"
       />
 
