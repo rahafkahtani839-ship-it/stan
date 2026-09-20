@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # رابط خريطة الموقع الرسمية
-Sitemap: https://emirates-support.com/sitemap.xml
+Sitemap: https://complaint-support.com/sitemap.xml
