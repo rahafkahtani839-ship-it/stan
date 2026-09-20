@@ -48,15 +48,24 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
       aria-label={t("hero.ariaLabel")}
       className="relative overflow-hidden bg-[var(--color-slate-dark)] text-[var(--color-slate-ice)] pt-30 md:pt-45 pb-16 md:pb-24"
     >
-      {/* ===== التدرج الخلفي الشفاف الشامل ===== */}
+      {/* ===== 1. صورة الخلفية الرئيسية ===== */}
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <img
+          src="/pexels-beingsanshots-28122080 (1).jpg"
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
+        {/* طبقة تظليل داكنة لضمان وضوح النصوص */}
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+
+      {/* ===== 2. التدرج الخلفي الشفاف الشامل ===== */}
       <div
-        className="absolute inset-0 z-0 bg-gradient-to-br from-[var(--color-slate-dark)]/90 via-[#3a1f1f]/85 to-[var(--color-slate-dark)]/95"
+        className="absolute inset-0 z-1 bg-gradient-to-br from-[var(--color-slate-dark)]/80 via-[#3a1f1f]/70 to-[var(--color-slate-dark)]/90 mix-blend-multiply pointer-events-none"
         aria-hidden="true"
       />
 
-      {/* ===== الزخارف الثابتة بنفس لون المكتبة (#84934a) ===== */}
-      
-      {/* 1. شبكة النقاط الثابتة (Dot Grid Pattern) */}
+      {/* ===== 3. الزخارف الثابتة (#84934a) ===== */}
       <div 
         className="absolute inset-0 z-1 pointer-events-none opacity-20"
         aria-hidden="true"
@@ -66,7 +75,6 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
         }}
       />
 
-      {/* 2. شبكة الخيوط المتقاطعة الناعمة (Line Grid Pattern) */}
       <div 
         className="absolute inset-0 z-1 pointer-events-none opacity-15"
         aria-hidden="true"
@@ -79,7 +87,7 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
         }}
       />
 
-      {/* 3. دوائر إشعاعية زجاجية ثابتة بنفس لون الأخضر الزيتوني والرمادي */}
+      {/* دوائر إشعاعية زجاجية */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#84934a]/15 rounded-full blur-[140px] pointer-events-none z-1"
         aria-hidden="true"
@@ -89,12 +97,10 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
         aria-hidden="true"
       />
 
-      {/* ===== تدرج شفاف للدمج العلوي والسفلي ===== */}
-      <div className="absolute inset-0 pointer-events-none z-2" aria-hidden="true">
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[var(--color-slate-dark)] via-[var(--color-slate-dark)]/60 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[var(--color-slate-dark)] via-[var(--color-slate-dark)]/60 to-transparent" />
-      </div>
+      {/* ===== 4. تدرج شفاف أعلى الهيرو فقط (تم إزالة التدرج السفلي) ===== */}
+      <div className="absolute inset-x-0 top-0 h-32 pointer-events-none z-2 bg-gradient-to-b from-[var(--color-slate-dark)] via-[var(--color-slate-dark)]/60 to-transparent" aria-hidden="true" />
 
+      {/* ===== المحتوى الرئيسي ===== */}
       <div className="container-page relative z-10 max-w-5xl mx-auto">
         <div className="flex flex-col items-center text-center">
 
@@ -103,7 +109,7 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[var(--color-slate-ice)] leading-[1.25] tracking-tight max-w-4xl drop-shadow-lg"
+            className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[var(--color-slate-ice)] leading-[1.25] tracking-tight max-w-4xl drop-shadow-xl"
           >
             <span className="block sm:inline whitespace-normal md:whitespace-nowrap">
               {t("hero.brandName")}
@@ -118,7 +124,7 @@ export function HeroSection({ onPrimaryClick }: HeroSectionProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 max-w-2xl text-base sm:text-lg text-[var(--color-slate-ice)]/90 leading-relaxed font-medium drop-shadow-sm"
+            className="mt-6 max-w-2xl text-base sm:text-lg text-[var(--color-slate-ice)]/90 leading-relaxed font-medium drop-shadow-md"
           >
             {t("hero.subheading")}
           </motion.p>
